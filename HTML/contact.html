@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact | Alberto Ceballos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width-device-width, initial-scale-1" />
+  <?php include('..\PHP\mail.php');?>
+  <link rel="stylesheet" href="..\CSS\bootstrap-purified-contact.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="..\JS\bootstrap.min.js"></script>
+  <style>
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+
+  body,footer{
+    background-color: #222;
+    padding: 25px;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="homepage.html" style="color:white;">Alberto Ceballos</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="homepage.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutme.html">About Me</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li  class="active">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container" style="color:white">
+    <div class="row content">
+      <div class="col-sm-4">
+        <h2 style="padding-top: 7%">Contact Me:</h2>
+        <form action="../PHP/mail.php" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control" id="usr" placeholder="Your Name" name="name"/>
+            <span class="error"><?= $nameErr?></span>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="email" placeholder="Your Email" name="email"/>
+            <span class="error"><?= $emailErr?></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Enter your message</label>
+            <textarea class="form-control" rows="5" id="message" name="content"> </textarea>
+          </div>
+          <div>
+            <button name="submit" type="submit" class="btn btn-default submit" value="Send">Send Message</button>
+          </div>
+          <div class="success">
+            <?= $success ?>
+          </div>
+        </form>
+      </div>
+      <!--Google Map location-->
+      <br />
+      <br />
+      <div class="row content">
+        <div class="col-md-6">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109784.47401165059!2d-95.63819417938117!3d30.696892657727968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8647061db1245a4f%3A0xbcd5ed19f4f8e4f1!2sHuntsville%2C+TX!5e0!3m2!1sen!2sus!4v1506142265933" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <footer class="container-fluid text-center" style="color:white; padding-top:10%">
+    <p>
+      Copyright 2017 Alberto Ceballos - All Rights Reserved
+    </p>
+  </footer>
+</body>
+</html>

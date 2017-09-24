@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects | Alberto Ceballos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="..\CSS\bootstrap-purified-projects.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="..\JS\bootstrap.min.js"></script>
+  <style>
+  .navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  footer{
+    background-color: transparent;
+    padding: 25px;
+  }
+  body{
+    background-color: #222;
+    color:white;
+  }
+  .img-hover img{
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .img-hover img:hover{
+    -webkit-transform: scale(1.2);
+  }
+
+  .img-hover:hover:after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:2;
+    width:30px;
+    height:30px;
+  }
+
+  .row-inside{
+    font-size: 150%;
+  }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="homepage.html" style="color:white">Alberto Ceballos</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="homepage.html">Home</a>
+          </li>
+          <li>
+            <a href="aboutme.html">About Me</a>
+          </li>
+          <li  class="active">
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center">
+    <h2 style="padding-top:7%;color:orange;font-size:300%;">Recent Work</h2>
+    <br />
+    <p style="font-size:150%;">
+      Below are some of the apps that I have worked on recently.
+    </p>
+    <div class="row">
+      <div class="col-sm-3 img-hover">
+        <img src="../IMG/clipboard-icon.png" class="img-responsive center-block" style="width:60%" alt="Image">
+        <br />
+        <p class="Headers-bold" style="color:orange; font-size:200%;">
+          TaskList for Android
+        </p>
+        <p class="row-inside">
+          TaskList is a free to do list app, built from scratch for Android...
+        </p>
+      </div>
+      <div class="col-sm-3 img-hover">
+        <img src="../IMG/calculator-icon.png" class="img-responsive center-block" style="width:60%" alt="Image">
+        <br />
+        <p class="Headers-bold" style="color:orange; font-size:200%;">
+          SciCalc for Android
+        </p>
+        <p class="row-inside">
+          SciCalc is a free Scientific Calculator developed entirely for Android...
+        </p>
+      </div>
+      <div class="col-sm-3 img-hover">
+        <img src="../IMG/chat-icon.png" class="img-responsive center-block" style="width:60%" alt="Image">
+        <br />
+        <p class="Headers-bold" style="color:orange;font-size:200%;">
+          BoostChat
+        </p>
+        <p class="row-inside">
+          BoostChat is a Free messaging app available for Android. It uses your phone's internet connection to let you message and call family and friends...
+        </p>
+      </div>
+
+      <div class="col-sm-3 img-hover">
+        <img src="../IMG/tetris-icon.png" class="img-responsive center-block" style="width:30%" alt="Image">
+        <br />
+        <p class="Headers-bold" style="color:orange;font-size:200%;">
+          Tetris App for Android
+        </p>
+        <p class="row-inside">
+          X is a gun game based on the classic game based on the popular game Tetris. Easy to pick up but hard to master...
+        </p>
+      </div>
+    </div>
+
+</div><br>
+
+
+
+
+  <footer class="container-fluid text-center" style="color:white">
+    <p>
+      Copyright 2017 Alberto Ceballos - All Rights Reserved
+    </p>
+  </footer>
+</body>
+</html>
